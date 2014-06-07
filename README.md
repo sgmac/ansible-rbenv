@@ -1,6 +1,8 @@
 rbenv
 ===
 
+[![Build Status](https://travis-ci.org/sgmac/rbenv.svg?branch=master)](https://travis-ci.org/sgmac/rbenv)
+
 This role allows you to install ruby using rbenv
 
 Requirements
