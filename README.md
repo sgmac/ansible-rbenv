@@ -1,7 +1,7 @@
 rbenv
 ===
 
-[![Build Status](https://travis-ci.org/sgmac/rbenv.svg?branch=master)](https://travis-ci.org/sgmac/rbenv)
+[![Build Status](https://travis-ci.org/sgmac/ansible-rbenv.svg?branch=master)](https://travis-ci.org/sgmac/ansible-rbenv)
 
 This role allows you to install ruby using rbenv
 
@@ -27,6 +27,10 @@ The variables that can be passed to this role:
 
 	# Shell 
 	sh: bash
+
+By default the role creates the version file on $rbenv_dir as the command "rbenv global $ruby_version" would do. This is done to avoid idempotence issues when testing the role. 
+
+If you want to disable global rbenv for the current user, just delete the last task from the role.
 
 Examples
 --------
