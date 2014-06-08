@@ -11,6 +11,8 @@ Requirements
 This role requires Ansible 1.4 or higher, and platform requirements are listed
 in the metadata file.
 
+Tested version: Ansible 1.6.2
+
 Role Variables
 --------------
 
