@@ -69,4 +69,4 @@ MIT
 Author Information
 ------------------
 
-Sergio Galván, more information on https://github.com/sgmac/rbenv
+Sergio Galván, more information on https://github.com/sgmac/ansible-rbenv
