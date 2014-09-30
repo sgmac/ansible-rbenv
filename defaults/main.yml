@@ -2,6 +2,6 @@
 # Defaults vars
 
 user: "{{ ansible_env.SUDO_USER | default(ansible_env.USER) }}"
-home: "/home/{{user}}"
+home: "{{ ansible_env.HOME }}" 
 ruby_version: "1.9.3-p448"
 sh: bash
