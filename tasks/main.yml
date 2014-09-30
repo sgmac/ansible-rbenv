@@ -11,17 +11,18 @@
           - libcurl4-openssl-dev
           - ruby-mysql
           - libmysqlclient-dev
+  when: ansible_os_family == 'Debian'
 
 
 - name: Install rbenv  locally
   sudo_user: "{{ user }}"
   sudo: yes
-  git: repo=git://github.com/sstephenson/rbenv.git  dest="{{ rbenv_dir }}"
+  git: repo=git://github.com/sstephenson/rbenv.git  dest="{{ rbenv_dir }}" accept_hostkey=True
 
 - name:  Install ruby-build plugin
   sudo_user: "{{ user }}"
   sudo: yes
-  git: repo=git://github.com/sstephenson/ruby-build.git  dest="{{ rbenv_plugins }}/ruby-build"
+  git: repo=git://github.com/sstephenson/ruby-build.git  dest="{{ rbenv_plugins }}/ruby-build" accept_hostkey=True
 
 - name: Touch your shell configuration file in case does not exist
   command: "/usr/bin/touch  creates={{home}}/.{{ sh }}rc"
