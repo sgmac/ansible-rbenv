@@ -3,7 +3,7 @@ rbenv
 
 [![Build Status](https://travis-ci.org/sgmac/ansible-rbenv.svg?branch=master)](https://travis-ci.org/sgmac/ansible-rbenv)
 
-This role allows you to install ruby using rbenv
+This role installs ruby using rbenv
 
 Requirements
 ------------
@@ -69,4 +69,4 @@ MIT
 Author Information
 ------------------
 
-Sergio Galván, more information on https://github.com/sgmac/ansible-rbenv
+Sergio Galvan, more information on https://github.com/sgmac/ansible-rbenv
